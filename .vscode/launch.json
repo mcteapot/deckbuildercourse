@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Godot",
+        "type": "godot",
+        "request": "launch",
+        "project": "${workspaceFolder}",
+        "launch_scene": true,
+        "executable": "path/to/godot",
+        "arguments": ["--path", "${workspaceFolder}"],
+        "attach": false
+      }
+    ]
+  }

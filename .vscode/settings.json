@@ -1,0 +1,8 @@
+{
+    "godotTools.editorPath.godot4": "d:\\Program Files\\Godot\\Godot_v4.4.1-stable_win64\\Godot_v4.4.1-stable_win64.exe",
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.fileNesting.patterns": {
+	    "*.gd": "${capture}.gd.uid"
+    }
+}
