@@ -3,12 +3,12 @@ extends Node
 
 # CardState is a base class for all card states in the card game.
 enum State {
-    BASE,
-    CLICKED,
-    DRAGGING,
-    AIMING,
-    RELEASED,
-    DISABLED,
+	BASE,
+	CLICKED,
+	DRAGGING,
+	AIMING,
+	RELEASED,
+	DISABLED,
 }
 
 signal transition_requested(from: CardState, to: State)
@@ -18,19 +18,19 @@ signal transition_requested(from: CardState, to: State)
 var card_ui: CardUI
 
 func enter() -> void:
-    pass
+	pass
 
 func exit() -> void:
-    pass
+	pass
 
 func  on_input(event: InputEvent) -> void:
-    pass
+	pass
 
 func on_gui_input(event: InputEvent) -> void:
-    pass
+	pass
 
 func on_mouse_entered() -> void:
-    pass
+	pass
 
 func on_mouse_exited() -> void:
-    pass
+	pass

@@ -15,6 +15,10 @@ run/main_scene="uid://dw1xy4bnkeval"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="uid://du60hkc2hm3va"
 
+[autoload]
+
+Events="*res://global/event.gd"
+
 [display]
 
 window/size/viewport_width=256
@@ -22,6 +26,10 @@ window/size/viewport_height=144
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/script-ide/plugin.cfg")
 
 [input]
 
@@ -40,6 +48,7 @@ right_mouse={
 
 2d_physics/layer_1="card_target_selector"
 2d_physics/layer_2="card_drop_area"
+2d_physics/layer_3="enemies"
 
 [rendering]
 
