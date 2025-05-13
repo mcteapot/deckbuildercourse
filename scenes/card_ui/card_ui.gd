@@ -22,7 +22,7 @@ func _input(event: InputEvent) -> void:
 	card_state_machine.on_input(event)
 	
 func animate_to_position(new_position: Vector2, duration: float) -> void:
-	tween = create_tween().set_trans(Tween.TRANS_CIRC).set_ease(Tween.EASE_OUT)
+	tween = create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_OUT)
 	tween.tween_property(self, "global_position", new_position, duration)
 	
 

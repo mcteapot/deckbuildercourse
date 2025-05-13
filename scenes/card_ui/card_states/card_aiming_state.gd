@@ -5,14 +5,14 @@ const MOUSE_Y_SNAPBACK_THRESHOLD := 138
 
 func enter() -> void:
 	card_ui.color.color = Color.WEB_PURPLE
-	card_ui.state.text = "AMING"
+	card_ui.state.text = "Aiming"
 	card_ui.targets.clear()
 	# Calulate card offset in hand
 	var offset := Vector2(card_ui.parent.size.x / 2, -card_ui.size.y / 2)
 	offset.x -= card_ui.size.x / 2
 	card_ui.animate_to_position(card_ui.parent.global_position + offset, 0.2)
 	card_ui.drop_point_detector.monitoring = false
-	# Call event buss of when ariving at aming state, aim started siginal has started, so listners can respond
+	# Call event buss of when ariving at aiming state, aim started siginal has started, so listners can respond
 	Events.card_aim_started.emit(card_ui)
 	
 func exit() -> void:
